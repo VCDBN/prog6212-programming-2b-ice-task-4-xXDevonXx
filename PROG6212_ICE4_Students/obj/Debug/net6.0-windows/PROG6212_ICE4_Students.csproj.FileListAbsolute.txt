@@ -1,0 +1,11 @@
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG6212_ICE4_Students.csproj.AssemblyReference.cache
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG6212_ICE4_Students.Home.resources
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG_ICE4_Students.Login.resources
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG_ICE4_Students.Menu.resources
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG_ICE4_Students.Menus.RegisterStudent.resources
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG_ICE4_Students.Register.resources
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG6212_ICE4_Students.csproj.GenerateResource.cache
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG6212_ICE4_Students.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG6212_ICE4_Students.AssemblyInfoInputs.cache
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG6212_ICE4_Students.AssemblyInfo.cs
+C:\Users\duerh\source\repos\PROG6212_ICE4_Students\PROG6212_ICE4_Students\obj\Debug\net6.0-windows\PROG6212_ICE4_Students.csproj.CoreCompileInputs.cache
