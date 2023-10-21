@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\duerh\\source\\repos\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students.csproj": {}
+    "C:\\Users\\duerh\\Important\\Share\\Uni\\Year 2\\Semester 2\\PROG6212\\ICE\\4\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students.csproj": {}
   },
   "projects": {
-    "C:\\Users\\duerh\\source\\repos\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students.csproj": {
+    "C:\\Users\\duerh\\Important\\Share\\Uni\\Year 2\\Semester 2\\PROG6212\\ICE\\4\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duerh\\source\\repos\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students.csproj",
+        "projectUniqueName": "C:\\Users\\duerh\\Important\\Share\\Uni\\Year 2\\Semester 2\\PROG6212\\ICE\\4\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students.csproj",
         "projectName": "PROG6212_ICE4_Students",
-        "projectPath": "C:\\Users\\duerh\\source\\repos\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students.csproj",
+        "projectPath": "C:\\Users\\duerh\\Important\\Share\\Uni\\Year 2\\Semester 2\\PROG6212\\ICE\\4\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students.csproj",
         "packagesPath": "C:\\Users\\duerh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duerh\\source\\repos\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students\\obj\\",
+        "outputPath": "C:\\Users\\duerh\\Important\\Share\\Uni\\Year 2\\Semester 2\\PROG6212\\ICE\\4\\PROG6212_ICE4_Students\\PROG6212_ICE4_Students\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\duerh\\AppData\\Roaming\\NuGet\\NuGet.Config",

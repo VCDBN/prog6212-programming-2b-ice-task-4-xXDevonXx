@@ -33,6 +33,9 @@
             txb_Search = new TextBox();
             dgv_Students = new DataGridView();
             tab_Modules = new TabPage();
+            txb_EditModule = new TextBox();
+            rbt_Name = new RadioButton();
+            rbt_Code = new RadioButton();
             bt_DeleteModule = new Button();
             bt_EditModule = new Button();
             bt_AddModule = new Button();
@@ -96,6 +99,9 @@
             // 
             // tab_Modules
             // 
+            tab_Modules.Controls.Add(txb_EditModule);
+            tab_Modules.Controls.Add(rbt_Name);
+            tab_Modules.Controls.Add(rbt_Code);
             tab_Modules.Controls.Add(bt_DeleteModule);
             tab_Modules.Controls.Add(bt_EditModule);
             tab_Modules.Controls.Add(bt_AddModule);
@@ -108,23 +114,55 @@
             tab_Modules.Text = "Modules";
             tab_Modules.UseVisualStyleBackColor = true;
             // 
+            // txb_EditModule
+            // 
+            txb_EditModule.Location = new Point(398, 168);
+            txb_EditModule.Name = "txb_EditModule";
+            txb_EditModule.PlaceholderText = "Code/Name";
+            txb_EditModule.Size = new Size(115, 23);
+            txb_EditModule.TabIndex = 6;
+            // 
+            // rbt_Name
+            // 
+            rbt_Name.AutoSize = true;
+            rbt_Name.Location = new Point(482, 134);
+            rbt_Name.Name = "rbt_Name";
+            rbt_Name.Size = new Size(57, 19);
+            rbt_Name.TabIndex = 5;
+            rbt_Name.TabStop = true;
+            rbt_Name.Text = "Name";
+            rbt_Name.UseVisualStyleBackColor = true;
+            // 
+            // rbt_Code
+            // 
+            rbt_Code.AutoSize = true;
+            rbt_Code.Location = new Point(382, 134);
+            rbt_Code.Name = "rbt_Code";
+            rbt_Code.Size = new Size(53, 19);
+            rbt_Code.TabIndex = 4;
+            rbt_Code.TabStop = true;
+            rbt_Code.Text = "Code";
+            rbt_Code.UseVisualStyleBackColor = true;
+            // 
             // bt_DeleteModule
             // 
-            bt_DeleteModule.Location = new Point(398, 134);
+            bt_DeleteModule.Location = new Point(398, 76);
             bt_DeleteModule.Name = "bt_DeleteModule";
             bt_DeleteModule.Size = new Size(115, 23);
             bt_DeleteModule.TabIndex = 3;
             bt_DeleteModule.Text = "Delete Module";
             bt_DeleteModule.UseVisualStyleBackColor = true;
+            bt_DeleteModule.Click += bt_DeleteModule_Click;
             // 
             // bt_EditModule
             // 
-            bt_EditModule.Location = new Point(398, 82);
+            bt_EditModule.Location = new Point(398, 207);
             bt_EditModule.Name = "bt_EditModule";
             bt_EditModule.Size = new Size(115, 23);
             bt_EditModule.TabIndex = 2;
             bt_EditModule.Text = "Edit Module";
             bt_EditModule.UseVisualStyleBackColor = true;
+            bt_EditModule.Click += bt_EditModule_Click;
             // 
             // bt_AddModule
             // 
@@ -229,6 +267,7 @@
             tab_Students.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Students).EndInit();
             tab_Modules.ResumeLayout(false);
+            tab_Modules.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Modules).EndInit();
             tab_Assignment.ResumeLayout(false);
             tab_Assignment.PerformLayout();
@@ -255,5 +294,8 @@
         private Button bt_AssignMark;
         private TextBox txb_SearchAssignment;
         private TextBox txb_AssignMark;
+        private RadioButton rbt_Name;
+        private RadioButton rbt_Code;
+        private TextBox txb_EditModule;
     }
 }

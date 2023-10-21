@@ -1,14 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using PROG_ICE4_Students;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace PROG6212_ICE4_Students.Menus
 {
@@ -22,6 +14,7 @@ namespace PROG6212_ICE4_Students.Menus
             GetModules();
             GetAssignment();
             Permissions();
+            rbt_Code.Checked = true;
         }
 
         private void Permissions()
@@ -153,14 +146,14 @@ namespace PROG6212_ICE4_Students.Menus
 
         private void bt_AssignMark_Click(object sender, EventArgs e)
         {
-            if (dgv_Assignment.SelectedRows.Count > 0)
+            if (dgv_Assignment.SelectedRows.Count > 0) //checks if a row is selected
             {
                 if (txb_AssignMark.Text.Length > 0 && int.TryParse(txb_AssignMark.Text, out _))
                 {
                     SqlConnection sqlConnection = new(Connection.Conn);
                     sqlConnection.Open();
 
-                    string query = $"UPDATE StudentModule SET Mark = '{txb_AssignMark.Text}';";
+                    string query = $"UPDATE StudentModule SET Mark = '{txb_AssignMark.Text}' WHERE smID = {dgv_Assignment.CurrentRow.Cells[0].Value};";
 
                     SqlCommand command = new(query, sqlConnection);
                     command.ExecuteNonQuery();
@@ -205,6 +198,62 @@ namespace PROG6212_ICE4_Students.Menus
             else
             {
                 GetAssignment();
+            }
+        }
+
+        private void bt_EditModule_Click(object sender, EventArgs e)
+        {
+            if (dgv_Modules.SelectedRows.Count > 0) //checks if a row is selected
+            {
+                if (txb_EditModule.Text.Length > 0)
+                {
+
+                    string attribute = rbt_Code.Checked ? "Code" : "Name";
+                    SqlConnection sqlConnection = new(Connection.Conn);
+                    sqlConnection.Open();
+
+                    string query = $"UPDATE Module SET {attribute} = '{txb_EditModule.Text}' WHERE mID = {dgv_Modules.CurrentRow.Cells[0].Value};";
+
+                    SqlCommand command = new(query, sqlConnection);
+                    command.ExecuteNonQuery();
+                    sqlConnection.Close();
+                    GetModules();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid edit!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selct a row!");
+            }
+        }
+
+        private void bt_DeleteModule_Click(object sender, EventArgs e)
+        {
+            if (dgv_Modules.SelectedRows.Count > 0) //checks if a row is selected
+            {
+                try
+                {
+                    SqlConnection sqlConnection = new(Connection.Conn);
+                    sqlConnection.Open();
+
+                    string query = $"DELETE FROM Module WHERE mID = {dgv_Modules.CurrentRow.Cells[0].Value};";
+
+                    SqlCommand command = new(query, sqlConnection);
+                    command.ExecuteNonQuery();
+                    sqlConnection.Close();
+                    GetModules();
+                }
+                catch
+                {
+                    MessageBox.Show("Module cannot be deleted!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selct a row!");
             }
         }
     }
